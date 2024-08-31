@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+#calendar-container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+#calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#calendar-header button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#calendar-header button:hover {
+  background-color: #0056b3;
+}
+
+#calendar {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: #f1f1f1;
+}
+
+.today {
+  background-color: #ffeb3b;
+}
+
+.reserved {
+  background-color: #f44336;
+  color: white;
+}
+
+.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+#time-selection-container,
+#laptop-selection-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#time-grid,
+#laptop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#time-grid button,
+#laptop-grid button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+#time-grid button.selected,
+#laptop-grid button.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+#laptop-grid button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

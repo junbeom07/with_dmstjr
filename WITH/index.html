@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar with Laptop Rental System</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="calendar-container">
+        <div id="calendar-header">
+            <button id="prev-month">Previous</button>
+            <h2 id="month-year"></h2>
+            <button id="next-month">Next</button>
+            <button id="reset-reservations">Reset Reservations</button>
+        </div>
+        <table id="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- JavaScript가 여기서 날짜를 채웁니다 -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="time-selection-container" style="display: none">
+        <h3>Select Rental Time</h3>
+        <div id="time-grid">
+            <!-- 대여 시간 버튼들이 JavaScript에 의해 생성됩니다 -->
+        </div>
+        <button id="confirm-time">Next</button>
+    </div>
+
+    <div id="laptop-selection-container" style="display: none">
+        <h3>Select a Laptop Number</h3>
+        <div id="laptop-grid">
+            <!-- 노트북 번호 버튼들이 JavaScript에 의해 생성됩니다 -->
+        </div>
+        <button id="confirm-selection">Confirm Selection</button>
+    </div>
+
+    <div id="confirmation"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
